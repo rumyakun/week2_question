@@ -17,7 +17,6 @@ class TestPriorityQueue(unittest.TestCase):
 
   def test_priority_queue_empty_pop(self):
     pq = PriorityQueue()
-
     self.assertIsNone(pq.pop())
 
   def test_priority_queue_push_pop_order(self):
@@ -60,7 +59,6 @@ class TestPriorityQueue(unittest.TestCase):
     self.assertEqual(pq.pop(), "Task 3")
     self.assertEqual(pq.pop(), "Task 1")
     self.assertIsNone(pq.pop())
-
 
 if __name__ == "__main__":
   unittest.main()
